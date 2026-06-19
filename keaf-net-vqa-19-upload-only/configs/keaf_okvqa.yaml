@@ -1,0 +1,41 @@
+experiment_name: keaf_okvqa
+seed: 42
+
+data:
+  dataset: OK-VQA
+  annotation_root: data/okvqa/annotations
+  image_root: data/coco/val2014
+  visual_features: data/features/faster_rcnn_vg_36.h5
+  vit_features: data/features/vit_b16_grid.h5
+  triplet_embeddings: data/features/conceptnet_cskg_triplets_sbert.h5
+  answer_vocab: data/vocab/answer_vocab_3129.json
+
+model:
+  hidden_dim: 768
+  num_answers: 3129
+  max_triplets: 50
+  loo_samples: 10
+  akf_loss_weight: 0.3
+  akf_temperature: 0.1
+  hgaf_layers: 2
+  hgaf_heads: 8
+  reasoning_hops: 3
+  dropout: 0.1
+
+training:
+  epochs: 20
+  effective_batch_size: 64
+  batch_size: 16
+  grad_accum_steps: 4
+  optimizer: AdamW
+  learning_rate: 2.0e-5
+  weight_decay: 0.01
+  scheduler: linear_warmup
+  warmup_ratio: 0.1
+  early_stopping_patience: 4
+  metric: okvqa_soft_accuracy
+
+logging:
+  save_every_epoch: true
+  csv_log: training_log.csv
+  tensorboard: false
