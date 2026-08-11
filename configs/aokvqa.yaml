@@ -1,0 +1,19 @@
+seed: 17
+data:
+  train: data/aokvqa/train.jsonl
+  val: data/aokvqa/val.jsonl
+model:
+  visual_dim: 2048
+  fact_dim: 768
+  vocab_size: 32000
+  answer_size: 3000
+  hidden_dim: 512
+  top_k: 50
+  graph_layers: 2
+  reasoning_hops: 3
+training:
+  batch_size: 64
+  epochs: 30
+  learning_rate: 0.0001
+  weight_decay: 0.00001
+  output_dir: runs/aokvqa
