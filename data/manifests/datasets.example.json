@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "datasets": [
+    {
+      "name": "OK-VQAv2",
+      "version": "UNSET",
+      "upstream_url": "UNSET",
+      "license": "VERIFY_UPSTREAM",
+      "split": "UNSET",
+      "sha256": "UNSET",
+      "local_path": "data/raw/ok_vqav2",
+      "redistributable": false
+    },
+    {
+      "name": "A-OKVQA",
+      "version": "UNSET",
+      "upstream_url": "UNSET",
+      "license": "VERIFY_UPSTREAM",
+      "split": "UNSET",
+      "sha256": "UNSET",
+      "local_path": "data/raw/aokvqa",
+      "redistributable": false
+    },
+    {
+      "name": "Encyclopedic-VQA",
+      "version": "UNSET",
+      "upstream_url": "UNSET",
+      "license": "VERIFY_UPSTREAM",
+      "split": "UNSET",
+      "sha256": "UNSET",
+      "local_path": "data/raw/encyclopedic_vqa",
+      "redistributable": false
+    },
+    {
+      "name": "VLM-DeflectionBench",
+      "version": "UNSET",
+      "upstream_url": "UNSET",
+      "license": "VERIFY_UPSTREAM",
+      "split": "UNSET",
+      "sha256": "UNSET",
+      "local_path": "data/raw/vlm_deflection_bench",
+      "redistributable": false
+    }
+  ]
+}
+

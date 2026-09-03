@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "name": "ConceptNet-or-CSKG",
+      "snapshot_date": "UNSET",
+      "version": "UNSET",
+      "license": "VERIFY_UPSTREAM",
+      "sha256": "UNSET",
+      "local_path": "data/raw/knowledge/structured"
+    },
+    {
+      "name": "Wikidata",
+      "snapshot_date": "UNSET",
+      "version": "UNSET",
+      "license": "VERIFY_UPSTREAM",
+      "sha256": "UNSET",
+      "local_path": "data/raw/knowledge/wikidata"
+    },
+    {
+      "name": "Wikipedia",
+      "snapshot_date": "UNSET",
+      "version": "UNSET",
+      "license": "VERIFY_UPSTREAM",
+      "sha256": "UNSET",
+      "local_path": "data/raw/knowledge/wikipedia"
+    }
+  ]
+}
+

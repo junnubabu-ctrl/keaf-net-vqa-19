@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this research implementation, please cite the associated Paper 4 manuscript."
+title: "EviTrust-VQA: Evidence-Aware Knowledge Verification for Reliable Knowledge-Enhanced Visual Question Answering"
+type: software
+authors:
+  - family-names: "Junnu Babu"
+    given-names: "N."
+version: "0.1.0"
+date-released: 2026-09-03
+license: Apache-2.0
+repository-code: "https://github.com/junnubabu-ctrl/keaf-net-vqa-19"

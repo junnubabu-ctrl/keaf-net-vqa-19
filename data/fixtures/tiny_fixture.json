@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "question": {
+    "question_id": "tiny-001",
+    "image_id": "synthetic-clock-tower",
+    "text": "In which city is the tower shown?"
+  },
+  "evidence": [
+    {
+      "evidence_id": "ev-001",
+      "claim": "Big Ben is located in London.",
+      "source_id": "wikidata-Q84",
+      "source_type": "knowledge_graph",
+      "snapshot": "2026-01-01",
+      "retrieval_score": 0.95,
+      "content_score": 0.92,
+      "source_reliability": 0.90,
+      "stance": "support",
+      "subject": "Big Ben",
+      "predicate": "located in",
+      "object": "London",
+      "answer": "London"
+    },
+    {
+      "evidence_id": "ev-002",
+      "claim": "The Elizabeth Tower stands at the Palace of Westminster in London.",
+      "source_id": "wikipedia-elizabeth-tower",
+      "source_type": "encyclopedia",
+      "snapshot": "2026-01-01",
+      "retrieval_score": 0.88,
+      "content_score": 0.86,
+      "source_reliability": 0.85,
+      "stance": "support",
+      "subject": "Elizabeth Tower",
+      "predicate": "located in",
+      "object": "London",
+      "answer": "London"
+    },
+    {
+      "evidence_id": "ev-003",
+      "claim": "Big Ben is located in Paris.",
+      "source_id": "synthetic-conflict",
+      "source_type": "unverified_web",
+      "snapshot": "2026-01-01",
+      "retrieval_score": 0.71,
+      "content_score": 0.61,
+      "source_reliability": 0.20,
+      "stance": "refute",
+      "subject": "Big Ben",
+      "predicate": "located in",
+      "object": "Paris",
+      "answer": "Paris"
+    }
+  ],
+  "evaluation_only": {
+    "gold_answers": ["London", "London", "London", "London", "London", "London", "London", "London", "London", "London"]
+  }
+}
+
