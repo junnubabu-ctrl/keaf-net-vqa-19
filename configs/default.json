@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "seed": 2300106037,
+  "top_k": 10,
+  "evidence_accept_threshold": 0.55,
+  "support_threshold": 0.15,
+  "refute_threshold": -0.15,
+  "target_selective_risk": 0.10,
+  "corruption_rates": [0.10, 0.25, 0.50],
+  "minimum_training_seeds": 3,
+  "bootstrap_replicates": 10000,
+  "knowledge_snapshots": {
+    "structured": "UNSET-CONCEPTNET-OR-CSKG-SNAPSHOT",
+    "encyclopedic": "UNSET-WIKIDATA-AND-WIKIPEDIA-SNAPSHOT"
+  }
+}
+
