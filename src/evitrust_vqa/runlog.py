@@ -9,7 +9,7 @@ import platform
 import subprocess
 import sys
 from dataclasses import asdict, dataclass
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -57,7 +57,7 @@ class RunManifest:
     ) -> "RunManifest":
         return cls(
             run_id=run_id,
-            started_at_utc=datetime.now(UTC).isoformat(),
+            started_at_utc=datetime.now(timezone.utc).isoformat(),
             git_commit=_git_commit(Path(repo)),
             config_sha256=config_sha256,
             data_manifest_sha256=data_manifest_sha256,
@@ -78,4 +78,3 @@ def atomic_write_json(path: str | Path, payload: dict[str, Any]) -> None:
 
 def manifest_payload(manifest: RunManifest, results: dict[str, Any]) -> dict[str, Any]:
     return {"manifest": asdict(manifest), "results": results}
-

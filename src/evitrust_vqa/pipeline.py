@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from typing import Any
 
 from .answering import Answerer, EvidenceVoteAnswerer, Retriever
@@ -106,7 +106,7 @@ class EviTrustPipeline:
         selective = self.selective.decide(candidate.text, confidence, sufficiency.sufficient)
         audit = {
             "schema_version": self.config.schema_version,
-            "timestamp_utc": datetime.now(UTC).isoformat(),
+            "timestamp_utc": datetime.now(timezone.utc).isoformat(),
             "config_sha256": self.config.digest(),
             "seed": self.config.seed,
             "grounding_score": round(grounding, 8),
