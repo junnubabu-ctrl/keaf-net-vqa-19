@@ -1,0 +1,12 @@
+{
+  "answer_model_path": "/REPLACE_WITH_LOCAL_SNAPSHOT/Qwen2.5-VL-7B-Instruct",
+  "answer_revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+  "nli_model_path": "/REPLACE_WITH_LOCAL_SNAPSHOT/nli-deberta-v3-base",
+  "nli_revision": "6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+  "seed": 17,
+  "max_new_tokens": 64,
+  "top_k": 10,
+  "accepted_k": 5,
+  "contradiction_threshold": 0.8,
+  "method": "verification"
+}

@@ -1,3 +1,9 @@
+> **Scientific status — 8 September 2026:** the legacy CLI is a CPU diagnostic
+> scaffold, not a validated neural KB-VQA system. Its scores are not calibrated
+> benchmark findings. Use the separately documented local-model research runner;
+> that path is implemented but still needs real-weight runtime validation.
+> See [scientific audit](docs/AUDIT_20260908.md).
+
 # EviTrust-VQA
 
 Reference implementation for **Evidence-Aware Knowledge Verification for Reliable
